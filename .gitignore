@@ -1,0 +1,52 @@
+# ===== Credenciales y secretos =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Wallet de Oracle Autonomous Database
+wallet/
+Wallet_*/
+*.sso
+*.p12
+*.jks
+ewallet.*
+cwallet.*
+# Credenciales de AWS
+.aws/
+credentials
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ===== Empaquetado de Lambda =====
+*.zip
+package/
+.aws-sam/
+
+# ===== Node / frontend =====
+node_modules/
+dist/
+build/
+
+# ===== Manuales y datos locales =====
+# Los PDFs se suben a S3, no al repositorio
+manuales/
+*.pdf
+!docs/*.pdf
+
+# ===== Sistema operativo y editores =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.log
